@@ -1,0 +1,319 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* cabeçalho */
+
+header {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: grey;
+    padding-top: 0px;
+    padding-bottom: 200px;
+    background-image:  url(src/img/background.jpg);
+    background-size:cover;
+    height:605px;
+    background-attachment: fixed;
+
+}
+
+/* INFORMAÇÕES */
+ .informaçoes { 
+   
+    /* background-image: url(src/img/robo_Prancheta\ 1.png); */
+    /* background-size: cover;
+    height: 1000px;
+    width: 500px; */
+ 
+    animation-name: movimento;
+  animation-duration: 7s;
+animation-iteration-count:normal;
+padding-top: 200px;
+padding-right: 180px;
+    
+}
+/* @keyframes movimento { */
+    0% {background-color: black; opacity: 0;}
+    100% {background-color:black; opacity: 0.7;}
+ 
+
+}
+
+.informaçoes-name {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+       
+        display: flex;  
+    text-align: center;
+        font-size: 12px;
+       
+}
+.informaçoes-name {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 19px;
+  color: aliceblue;
+}
+
+p {
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    margin: 40px;
+}
+
+/*PERFIL  */
+
+#perfil1{
+    width: 350px;
+    height: 350px;
+padding-top: 50px;
+}
+
+/* TITULO */
+
+
+/* MENU*/
+
+h1 { 
+    color: rgb(28, 29, 29);
+    font-size: 20px;
+    font-family: 'Questrial', sans-serif;
+margin: 
+    
+}
+
+
+nav {
+   
+
+background-color: white;
+width: 100%;
+
+
+}
+
+
+.menu-principal {
+
+display: flex;
+list-style: none;
+justify-content: flex-start;
+flex-wrap: wrap;
+color: white;
+    font-family: 'Questrial', sans-serif;
+
+
+}
+
+.menu-principal li {
+    padding: 30px;
+    color: rgb(46, 47, 48);
+
+}
+
+.logoname {
+    font-size: 20px;
+    color: rgb(46, 47, 48);
+    display: flex;
+  margin-right: 600px;
+  margin-left: 100px;
+}
+
+/* ABOUT */
+
+#about {
+    background-color:gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-top: 50px;
+}
+
+#about h2 {
+
+    margin-bottom: 20px;
+}
+
+
+
+.box-content-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#perfil {
+ 
+    width: 430px;
+    height: 400px;
+    
+}
+
+.content-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+.content-about h3 {
+    margin-bottom: 20px;
+    font-family: 'Questrial', sans-serif;
+}
+
+.content-about p{
+   
+    text-align: justify;
+}
+
+/* PORTIFOLIO */
+
+#portifolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ .port-images { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ .port-images img {
+    margin: 10px;
+    width: 300px;
+    height: 300px;;
+
+}
+
+
+
+
+/* SOCIAL */
+
+#social {
+  padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#social ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#social ul li {
+width: 50px;
+height: 50px;
+border : 1px solid black;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 50px;
+margin: 20px;
+
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* MEDIA QUERY */
+
+@media screen and (min-width: 768px) {
+
+    #about {
+        background-color: white;
+        opacity: 0.9;
+        background-size: cover;
+     
+    }
+    .box-content-about {
+        flex-direction: row;
+        max-width: 2500px;
+        margin-right: 300px;
+        
+        
+    }
+
+    .content-about {
+        align-items: center;
+       
+    }
+    .experiencias {
+        margin-top: 10px;
+        font-family: 'Questrial', sans-serif;
+        font-size: 30px;
+    }
+    .content-about p{
+   
+        text-align: justify;
+        color: black;
+        font-family: 'Questrial', sans-serif;
+        line-height: 30px;
+        font-size: 20px;
+    }
+    #perfil {
+ 
+        width: 630px;
+        height: 600px;
+        margin-left: 250px;
+        margin-bottom: 50px;
+ 
+
+    }
+
+    #portifolio {
+        font-family: 'Questrial', sans-serif;
+        font-size: 22px;
+    }
+    .port-images {
+        flex-direction: row;
+        max-width: 1000px;
+        flex-wrap: wrap;
+        justify-content: center;
+       
+    }
+    .port-images img {
+    margin: 10px;
+    width: 300px;
+    height: 300px;;
+
+  }
+
+    .informaçoes {
+   
+      /* background-image: url(src/img/robo_Prancheta\ 1.png);
+      background-size: cover;
+      height: 1000px;
+      width: 500px; */
+    
+    padding-top: 250px;
+      text-align: center;
+      animation-name: movimento;
+    animation-duration: 7s;
+  animation-iteration-count:normal;
+  margin-left: 180px;
+}
+.informaçoes-name {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30px;
+  color: aliceblue;
+}
